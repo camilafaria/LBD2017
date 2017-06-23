@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Documento sem título</title>
+		<style type="text/css">
+			#box{
+				/*definimos a largura do box*/
+				width:300px;
+				/* definimos a altura do box */
+				height:100px;
+				/* definimos a cor de fundo do box */
+				background-color:#6495ed;
+				/* definimos o quão arredondado irá ficar nosso box */
+				border-radius: 10px;
+				/* Declaração para aparecer no Firefox */
+				-moz-border-radius: 10px;
+				/* Para exibir nos outros navegadores como Chrome, safari, opera*/
+				-webkit-border-radius: 10px;
+				}
+		</style>
+	</head>
+	<body>
+		<!------------------------ código do conteudo das vagas -------------------------->
+		<div class="container">
+			<form action="pesquisar_vaga_form.php" method="post" name="form1" target="meio" id="form1">
+				<table width="500" border="0" align="center">
+					<tr>
+						<td colspan="2">Busca por palavras chave</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label for="vaga"></label><input name="vaga" type="text" id="vaga" size="50"></td>
+					</tr>
+					<tr>
+						<td width="252"></br><label>Habilidade</label></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Artes / Artesanato">Artes / Artesanato</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Comunicação">Comunicação</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Dança / Música">Dança / Música</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Direito">Direito</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Educação">Educacao</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Esportes">Esportes</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Gastronomia">Gastronomia</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Gestão">Gestão</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Idiomas">Idiomas</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Informática / Eletrônica">Informática / Eletrônica</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Saúde / Psicologia">Saúde / Psicologia</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Outros">Outros</br></br></td>
+					</tr>
+					<tr>
+						<td width="344"><label>Causa de Interesse</label></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Capacitação Profissional">Capacitação Profissional</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Combate à Pobreza">Combate à Pobreza</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Consumo Consciente">Consumo Consciente</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Crianças e Jovens">Crianças e Jovens</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Cultura, Esporte e Arte">Cultura, Esporte, e Arte</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Defesa de Direitos">Defesa de Direitos</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Educação">Educação</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Idosos">Idosos</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Meio Ambiente">Meio Ambiente</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Participação Cidadã">Participação Cidadã</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Proteção Animal">Proteção Animal</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Saúde">Saúde</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Pessoas com Deficiência">Pessoas com Deficiência</br></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="enviar" id="enviar" value="Pesquisar"></td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
