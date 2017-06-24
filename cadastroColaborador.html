@@ -3,58 +3,60 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Documento sem título</title>
+<link href="css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
 
+<div class="container">
 <form action="" method="post" name="form1" target="meio1" id="form1">
   <table width="500" border="0" align="center">
     <tr>
-      <td height="50" colspan="2"><strong>Cadastro Colaborador.</strong></td>
+      <td height="50" colspan="2" align="center"><font size=5 line-height=24px color=#696D6B font-family='source_sans_prolight'><strong>Cadastro de Colaborador</strong></font></td>
     </tr>
     <tr>
-      <td height="44" colspan="2">Todos os campos são obrigatórios!</td>
+      <td height="44" colspan="2"><font size=3 line-height=24px color=#3B3331 font-family='source_sans_prolight'><i>Obs: Todos os campos são obrigatórios!</i></font></td>
     </tr>
     <tr>
-      <td width="216">Nome Completo</td>
+      <td height="40"width="216"><b>Nome Completo</b></td>
       <td width="192"><label for="nome"></label>
-      <input type="text" name="nome" id="nome" /></td>
+      <input type="text" name="nome" id="nome" size="25"/></td>
     </tr>
     <tr>
-      <td>CPF</td>
+      <td height="40"><b>CPF</b></td>
       <td><label for="cpf"></label>
-      <input type="text" name="cpf" id="cpf" /></td>
+      <input type="text" name="cpf" id="cpf" size="25"/></td>
     </tr>
     <tr>
-      <td>E-mail</td>
+      <td height="40"><b>E-mail</b></td>
       <td><label for="email"></label>
-      <input type="text" name="email" id="email" /></td>
+      <input type="text" name="email" id="email" size="25"/></td>
     </tr>
     <tr>
-      <td>Administrador</td>
+      <td height="40"><b>Administrador</b></td>
       <td><label for="administrador"></label>
-      <input type="text" name="administrador" id="administrador" />
+      <input type="text" name="administrador" id="administrador" size="25"/>
       <label for="administrador2"></label></td>
     </tr>
     <tr>
-      <td>Login</td>
+      <td height="40"><b>Login</b></td>
       <td><label for="login"></label>
-      <input type="text" name="login" id="login" /></td>
+      <input type="text" name="login" id="login" size="25"/></td>
     </tr>
     <tr>
-      <td>Senha</td>
+      <td height="40"><b>Senha</b></td>
       <td><label for="senha"></label>
-      <input type="text" name="senha" id="senha" /></td>
+      <input type="text" name="senha" id="senha" size="25"/></td>
     </tr>
     <tr>
-      <td>Cidade</td>
+      <td height="40"><b>Cidade</b></td>
       <td><label for="cidade"></label>
-      <input type="text" name="cidade" id="cidade" /></td>
+      <input type="text" name="cidade" id="cidade" size="25"/></td>
     </tr>
     <tr>
-      <td>Estado</td>
-      <td><select name="estado" id="estado" type="text">
-            <option value="" selected>
+      <td height="40"><b>Estado</b></td>
+      <td><select name="estado" id="estado" type="text" style="width: 188px">
+            <option value="" selected> Selecione um estado
             <option value="AC">AC
             <option value="AL">AL
             <option value="AM">AM
@@ -85,13 +87,14 @@
           </select></td>
     </tr>
     <tr>
-      <td height="50" colspan="2">Verifique atentamento os campos antes de enviar.</td>
+      <td height="50" colspan="2"><font size=3 line-height=24px color=#3B3331 font-family='source_sans_prolight'>Verifique atentamente os campos antes de enviar</font></td>
     </tr>
     <tr>
-      <td colspan="2">    <input type="submit" name="enviar" id="enviar" value="Enviar" /></td>
+      <td colspan="2">    <input type="submit" name="enviar" id="enviar" value="Enviar" class="btn" /></td>
     </tr>
   </table>
 </form>
+</div>
 
 </body>
 </html>

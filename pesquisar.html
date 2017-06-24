@@ -3,22 +3,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Documento sem título</title>
-		<style type="text/css">
-			#box{
-				/*definimos a largura do box*/
-				width:300px;
-				/* definimos a altura do box */
-				height:100px;
-				/* definimos a cor de fundo do box */
-				background-color:#6495ed;
-				/* definimos o quão arredondado irá ficar nosso box */
-				border-radius: 10px;
-				/* Declaração para aparecer no Firefox */
-				-moz-border-radius: 10px;
-				/* Para exibir nos outros navegadores como Chrome, safari, opera*/
-				-webkit-border-radius: 10px;
-				}
+		<style type="text/css">			
 		</style>
+		<link href="css/bootstrap.css" rel="stylesheet">		
 	</head>
 	<body>
 		<!------------------------ código do conteudo das vagas -------------------------->
@@ -26,10 +13,10 @@
 			<form action="pesquisar_vaga_form.php" method="post" name="form1" target="meio" id="form1">
 				<table width="500" border="0" align="center">
 					<tr>
-						<td colspan="2">Busca por palavras chave</td>
+						<td width="500" height="50" colspan="2" align="center"><strong><font size=5 line-height=24px color=#696D6B font-family='source_sans_prolight'><b><br>Pesquisa por vagas</b></font></strong></td>
 					</tr>
 					<tr>
-						<td colspan="2"><label for="vaga"></label><input name="vaga" type="text" id="vaga" size="50"></td>
+						<td height="50" colspan="2" width="500" align="center"><input name="vaga" type="text" id="vaga" size="40"></td>
 					</tr>
 					<tr>
 						<td width="252"></br><label>Habilidade</label></td>
@@ -67,7 +54,7 @@
 						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Pessoas com Deficiência">Pessoas com Deficiência</br></td>
 					</tr>
 					<tr>
-						<td><input type="submit" name="enviar" id="enviar" value="Pesquisar"></td>
+						<td><input type="submit" name="enviar" id="enviar" value="Pesquisar" class="btn"></td>
 						<td>&nbsp;</td>
 					</tr>
 				</table>

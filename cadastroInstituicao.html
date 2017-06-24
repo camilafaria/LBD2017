@@ -3,57 +3,59 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Documento sem título</title>
+<link href="css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
 
+<div class="container">
 <form action="cadastraInstituicao.php" method="post" name="form1" target="meio1" id="form1">
-  <table width="631" border="0" align="center">
+  <table width="500" border="0" align="center">
     <tr>
-      <td height="50" colspan="2"><strong>Cadastro Instituição.</strong></td>
+      <td height="50" colspan="2" align="center"><font size=5 line-height=24px color=#696D6B font-family='source_sans_prolight'><strong>Cadastro Instituição</strong></font></td>
     </tr>
     <tr>
-      <td height="44" colspan="2">Todos os campos são obrigatórios!</td>
+      <td height="44" colspan="2"><font size=3 line-height=24px color=#3B3331 font-family='source_sans_prolight'><i>Obs: Todos os campos são obrigatórios!</i></font></td>
     </tr>
     <tr>
-      <td width="124">Nome Instituição</td>
-      <td width="497"><label for="nome"></label>
-      <input type="text" name="nome" id="nome" /></td>
+      <td height="40" width="150"><b>Nome Instituição</b></td>
+      <td width="505"><label for="nome"></label>
+      <input type="text" name="nome" id="nome" size="38"/></td>	  
+    </tr>	
+    <tr>
+      <td height="40"><b>Descrição</b></td>
+      <td width="600"><label for="descricao"></label>
+      <textarea name="descricao" cols="40" rows="5" id="descricao"></textarea></td>
     </tr>
     <tr>
-      <td height="56">Descrição</td>
-      <td><label for="descricao"></label>
-      <textarea name="descricao" cols="80" rows="10" id="descricao"></textarea></td>
+      <td height="40"><b>Rua</b></td>
+      <td width="600"><label for="rua"></label>
+      <input type="text" name="rua" id="rua" size="38"/></td>
     </tr>
     <tr>
-      <td>Rua</td>
-      <td><label for="rua"></label>
-      <input type="text" name="rua" id="rua" /></td>
-    </tr>
-    <tr>
-      <td>Número</td>
+      <td height="40"><b>Número</b></td>
       <td><label for="Número"></label>
-      <input type="text" name="numero" id="numero" />
+      <input type="text" name="numero" id="numero" size="38" />
     </tr>
     <tr>
-      <td>Complemento</td>
+      <td height="40"><b>Complemento</b></td>
       <td><label for="login"></label>
-      <input type="text" name="complemento" id="complemento" /></td>
+      <input type="text" name="complemento" id="complemento" size="38" /></td>
     </tr>
     <tr>
-      <td>Bairro</td>
+      <td height="40"><b>Bairro</b></td>
       <td><label for="bairro"></label>
-      <input type="text" name="bairro" id="bairro" /></td>
+      <input type="text" name="bairro" id="bairro" size="38"/></td>
     </tr>
     <tr>
-      <td>Cidade</td>
+      <td height="40"><b>Cidade</b></td>
       <td><label for="cidade"></label>
-      <input type="text" name="cidade" id="cidade" /></td>
+      <input type="text" name="cidade" id="cidade" size="38"/></td>
     </tr>
     <tr>
-      <td>Estado</td>
-      <td><select name="estado" id="estado" type="text">
-            <option value="" selected>
+      <td height="40"><b>Estado</b></td>
+      <td><select name="estado" id="estado" type="text"  style="width: 268px">
+            <option value="" selected>Selecione um estado
             <option value="AC">AC
             <option value="AL">AL
             <option value="AM">AM
@@ -84,9 +86,9 @@
           </select></td>
     </tr>
     <tr>
-      <td>E-mail</td>
+      <td height="40"><b>E-mail</b></td>
       <td><label for="email"></label>
-      <input type="text" name="email" id="email" /></td>
+      <input type="text" name="email" id="email" size="38"td>
     </tr>
     <!--<tr>
       <td>Logotipo</td>
@@ -94,18 +96,18 @@
       <input type="text" name="cidade" id="cidade" /></td>
     </tr>-->
     <tr>
-      <td>WebSite</td>
+      <td height="40"><b>WebSite</b></td>
       <td><label for="website"></label>
-      <input type="text" name="website" id="website" /></td>
+      <input type="text" name="website" id="website" size="38"/></td>
     </tr>
     <tr>
-      <td height="50" colspan="2">Verifique atentamento os campos antes de enviar.</td>
+      <td height="50" colspan="2"><font size=3 line-height=24px color=#3B3331 font-family='source_sans_prolight'>Verifique atentamente os campos antes de enviar</font></td>
     </tr>
     <tr>
-      <td colspan="2">    <input type="submit" name="enviar" id="enviar" value="Enviar" /></td>
+      <td colspan="2">    <input type="submit" name="enviar" id="enviar" value="Enviar" class="btn"/></td>
     </tr>
   </table>
 </form>
-
+</div>
 </body>
 </html>
