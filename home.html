@@ -71,59 +71,52 @@
     </div>  
     
      <div class="container">
-      <table width="500" border="0" align="center">
-          <tr>            
-			<br><td colspan="4"><b>Busca por palavras-chave</b></td>
-          </tr>
-          <tr>
-            <td colspan="2"><label for="vaga"></label>
-            <input name="vaga" type="text" id="vaga" size="80" /></td>
-          </tr>
-          <tr>
-            <td width="252"><b>Busca por Habilidade</b></td>
-            <td width="344"><b>Busca por Causa de Interesse</b></td>
-          </tr>
-          <tr>
-            <td><form id="form1" name="form1" method="post" action="">
-              <label for="habilidade"></label>
-              <select name="habilidade" id="habilidade">
-				<option> Selecione uma habilidade </option>
-				<option> Artes/Artesanato </option>
-				<option> Comunicação </option>
-				<option> Dança/Música </option>
-				<option> Direito </option>
-				<option> Educação </option>
-				<option> Esportes </option>
-				<option> Gastronomia </option>
-				<option> Gestão </option>
-				<option> Idiomas </option>
-				<option> Informática/Eletrônica </option>
-				<option> Saúde/Psicologia </option>
-				<option> Outros </option>
-              </select>
-            </form></td>
-            <td><form id="form2" name="form2" method="post" action="">
-              <label for="causa"></label>
-              <select name="causa" id="causa" w>
-				<option> Selecione uma causa de interesse </option>
-				<option> Capacitação Profissional </option>
-				<option> Combate à pobreza </option>
-				<option> Consumo consciente </option>
-				<option> Crianças jovens </option>
-				<option> Cultura, esporte e arte </option>
-				<option> Defesa de Direitos </option>
-				<option> Educação </option>
-				<option> Idosos </option>
-				<option> Meio Ambiente </option>
-				<option> Participação Cidadã </option>
-				<option> Proteção Animal </option>
-				<option> Saúde </option>
-				<option> Pessoas com deficiência </option>
-              </select>			  
-            </form></td>
-			<td> <a class="btn" href="#"><b>Pesquisar</b></a> </td>		  
-          </tr>      		
-      </table>
+      <form action="pesquisar_vaga_form.php" method="post" name="form1" target="meio" id="form1">
+				<table width="500" border="0" align="center">
+					<tr>
+						<td width="500" height="50" colspan="2" align="center"><strong><font size=5 line-height=24px color=#696D6B font-family='source_sans_prolight'><b><br>Pesquisa por vagas</b></font></strong></td>
+					</tr>
+					<tr>
+						<td height="50" colspan="2" width="500" align="center"><input name="vaga" type="text" id="vaga" size="40"></td>
+					</tr>
+					<tr>
+						<td width="252"><label>Habilidade</label></td>
+						<td width="344"><label>Causa de Interesse</label></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Artes / Artesanato">Artes / Artesanato</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Comunicação">Comunicação</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Dança / Música">Dança / Música</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Direito">Direito</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Educação">Educacao</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Esportes">Esportes</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Gastronomia">Gastronomia</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Gestão">Gestão</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Idiomas">Idiomas</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Informática / Eletrônica">Informática / Eletrônica</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Saúde / Psicologia">Saúde / Psicologia</br>
+						<input type="checkbox" name="habilidade[]" id= "habilidade[]" value="Outros">Outros</br></br></td>
+					
+						<td><input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Capacitação Profissional">Capacitação Profissional</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Combate à Pobreza">Combate à Pobreza</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Consumo Consciente">Consumo Consciente</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Crianças e Jovens">Crianças e Jovens</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Cultura, Esporte e Arte">Cultura, Esporte, e Arte</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Defesa de Direitos">Defesa de Direitos</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Educação">Educação</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Idosos">Idosos</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Meio Ambiente">Meio Ambiente</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Participação Cidadã">Participação Cidadã</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Proteção Animal">Proteção Animal</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Saúde">Saúde</br>
+						<input type="checkbox" name="causa_de_interesse[]" id= "causa_de_interesse[]" value="Pessoas com Deficiência">Pessoas com Deficiência</br></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="enviar" id="enviar" value="Pesquisar" class="btn"></td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</form>
     </div>
     
     <!------------------------ código do conteudo das vagas -------------------------->

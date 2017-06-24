@@ -249,9 +249,10 @@
 		$quantidade = $quantidade_disp . "/" . $quantidade_total;
 		
 		echo "<center>
-		<table border = 0 width = '100%'>
+		<form action='cad_vaga_form.php' method='post' name='form4' target='meio2' id=form4'>
+		<table border = 0 width = '60%'>
 			<tr>
-				<td>$nome</td>
+				<td><u><b>$nome</b></u></td>
 			</tr>
 			<tr>
 				<td>$localizacao</td>
@@ -274,6 +275,17 @@
 			<tr>
 				<td>$eh_pontual</td><br><br>
 			</tr>
-		</table></center>";
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href='cad_vaga_form.php' target='meio'> <input type='submit' name='cadastrar' id='cadastrar' value='Cadastrar' /></a></td>
+			</tr>
+		</table></form></center>";
 	}
+	
+ session_start("teste");
+ $_SESSION['nome']=$nome;
+ $_SESSION['descricao']=$descricao;
+
 ?>
